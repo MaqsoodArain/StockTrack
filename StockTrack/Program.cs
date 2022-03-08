@@ -19,6 +19,7 @@ namespace StockTrack
             portfolio.AddStock(5);
             portfolio.AddStock(120);
             portfolio.AddStock(120);
+            portfolio.AddStock(200);
 
         
 
