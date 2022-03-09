@@ -21,6 +21,12 @@ namespace StockTrack
             portfolio.AddStock(120);
             portfolio.AddStock(200);
 
+            StockStatistics stats = portfolio.ComputeStatistics();
+
+            Console.WriteLine("The highest stock price is " + stats.HighestStock);
+            Console.WriteLine("The average stock price is " + stats.AverageStock);
+            Console.WriteLine("The lowest stock price is " + stats.LowestStock);
+
         
 
            

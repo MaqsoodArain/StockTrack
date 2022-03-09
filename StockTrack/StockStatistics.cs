@@ -8,5 +8,13 @@ namespace StockTrack
 {
     internal class StockStatistics
     {
+        public StockStatistics()
+        {
+            HighestStock = 0;
+            LowestStock = float.MaxValue;
+        }
+        public float HighestStock;
+        public float AverageStock;
+        public float LowestStock;
     }
 }
