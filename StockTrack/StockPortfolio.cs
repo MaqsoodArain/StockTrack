@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StockTrack
 {
-    internal class StockPortfolio
+    public class StockPortfolio
     {
         public StockPortfolio()
         {
@@ -30,8 +30,8 @@ namespace StockTrack
         {
             stocks.Add(stock);
         }
-        private List<float> stocks;
+        public List<float> stocks;
 
-        //private List<float> stocks = new List<float>();
+      
     }
 }

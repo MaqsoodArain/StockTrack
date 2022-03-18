@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StockTrack
 {
-    internal class StockStatistics
+    public class StockStatistics
     {
         public StockStatistics()
         {
