@@ -7,15 +7,15 @@ using System.IO;
 
 namespace StockTrack
 {
-    public class StockPortfolio
+    public class StockGroup
     {
-        public StockPortfolio()
+        public StockGroup()
         {
             stocks = new List<float>();
         }
-        public StockStatistics ComputeStatistics()
+        public StockMetrics ComputeStatistics()
         {
-            StockStatistics stats = new StockStatistics();
+            StockMetrics stats = new StockMetrics();
 
             float sum = 0;
             foreach (float stock in stocks)

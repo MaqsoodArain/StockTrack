@@ -45,8 +45,8 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StockPortfolio.cs" />
-    <Compile Include="StockStatistics.cs" />
+    <Compile Include="StockGroup.cs" />
+    <Compile Include="StockMetrics.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

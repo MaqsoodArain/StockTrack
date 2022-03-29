@@ -8,17 +8,17 @@ using System.Threading.Tasks;
 namespace StockTrack.Test
 {
     [TestClass]
-    public class StockPortfolioTests
+    public class StockGroupTests
     {
         [TestMethod]
         public void CalculateLowestPrice()
         {
-            StockPortfolio portfolio = new StockPortfolio();
+            StockGroup portfolio = new StockGroup();
 
             portfolio.AddStock(100);
             portfolio.AddStock(25);
 
-            StockStatistics result = portfolio.ComputeStatistics();
+            StockMetrics result = portfolio.ComputeStatistics();
 
             Assert.AreEqual(25, result.LowestStock);
 
@@ -28,12 +28,12 @@ namespace StockTrack.Test
         [TestMethod]
         public void CalculateHighestPrice()
         {
-            StockPortfolio portfolio = new StockPortfolio();
+            StockGroup portfolio = new StockGroup();
 
             portfolio.AddStock(100);
             portfolio.AddStock(25);
 
-            StockStatistics result = portfolio.ComputeStatistics();
+            StockMetrics result = portfolio.ComputeStatistics();
 
             Assert.AreEqual(100, result.HighestStock);
 
@@ -43,12 +43,12 @@ namespace StockTrack.Test
         [TestMethod]
         public void CalculateAveragePrice()
         {
-            StockPortfolio portfolio = new StockPortfolio();
+            StockGroup portfolio = new StockGroup();
 
             portfolio.AddStock(100);
             portfolio.AddStock(200);
 
-            StockStatistics result = portfolio.ComputeStatistics();
+            StockMetrics result = portfolio.ComputeStatistics();
 
             Assert.AreEqual(150, result.AverageStock);
 

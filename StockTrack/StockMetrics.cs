@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace StockTrack
 {
-    public class StockStatistics
+    public class StockMetrics
     {
-        public StockStatistics()
+        public StockMetrics()
         {
             HighestStock = 0;
             LowestStock = float.MaxValue;

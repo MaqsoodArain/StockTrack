@@ -10,7 +10,7 @@ namespace StockTrack
     {
         static void Main(string[] args)
         {
-            StockPortfolio portfolio = new StockPortfolio();
+            StockGroup portfolio = new StockGroup();
 
             portfolio.AddStock(15);
             portfolio.AddStock(20);
@@ -22,7 +22,7 @@ namespace StockTrack
             portfolio.AddStock(200);
             portfolio.ListStocks(Console.Out);
 
-            StockStatistics stats = portfolio.ComputeStatistics();
+            StockMetrics stats = portfolio.ComputeStatistics();
 
             Console.WriteLine("The highest stock price is " + stats.HighestStock);
             Console.WriteLine("The average stock price is " + stats.AverageStock);
