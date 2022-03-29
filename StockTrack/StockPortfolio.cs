@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace StockTrack
 {
@@ -25,6 +26,16 @@ namespace StockTrack
             }
             stats.AverageStock = sum / stocks.Count;
             return stats;
+        }
+
+        public void ListStocks(TextWriter destination)
+        {
+            Console.WriteLine("The list of stock prices in the portfolio are:");
+            for (int i = 0; i < stocks.Count; i++)
+            {
+                destination.WriteLine(stocks[i]);
+            }
+            Console.WriteLine();
         }
         public void AddStock(float stock)
         {

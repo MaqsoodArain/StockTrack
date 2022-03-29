@@ -20,6 +20,7 @@ namespace StockTrack
             portfolio.AddStock(120);
             portfolio.AddStock(120);
             portfolio.AddStock(200);
+            portfolio.ListStocks(Console.Out);
 
             StockStatistics stats = portfolio.ComputeStatistics();
 
