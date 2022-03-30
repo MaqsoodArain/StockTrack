@@ -18,24 +18,33 @@ namespace StockTrack
             StockMetrics stats = new StockMetrics();
 
             float sum = 0;
+           
+           
             foreach (float stock in stocks)
             {
                 stats.HighestStock = Math.Max(stock, stats.HighestStock);
                 stats.LowestStock = Math.Min(stock, stats.LowestStock);
                 sum += stock;
+                
             }
             stats.AverageStock = sum / stocks.Count;
             return stats;
+           
         }
 
         public void ListStocks(TextWriter destination)
         {
-            Console.WriteLine("The list of stock prices in the portfolio are:");
-            for (int i = 0; i < stocks.Count; i++)
+            Console.WriteLine("The price of stocks in the list is as follows:");
+            for (int i = 0; i < stocks.Count; i++ )
             {
                 destination.WriteLine(stocks[i]);
+                
             }
             Console.WriteLine();
+            float sum = stocks.Sum();
+            Console.WriteLine("The total value of the stock portfolio is {0}.", sum);
+            Console.WriteLine();
+
         }
         public void AddStock(float stock)
         {
